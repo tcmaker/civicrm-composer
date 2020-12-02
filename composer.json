@@ -16,9 +16,9 @@
     ],
     "require": {
         "civicrm/civicrm-asset-plugin": "~1.1",
-        "civicrm/civicrm-core": "~5.30",
-        "civicrm/civicrm-drupal-8": "~5.30",
-        "civicrm/civicrm-packages": "~5.30",
+        "civicrm/civicrm-core": "~5.31",
+        "civicrm/civicrm-drupal-8": "~5.31",
+        "civicrm/civicrm-packages": "~5.31",
         "composer/installers": "^1.2",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
@@ -85,6 +85,7 @@
                 "      composer remove drupal/core-project-message"
             ]
         },
-        "enable-patching": "true"
+        "enable-patching": "true",
+        "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"]
     }
 }
